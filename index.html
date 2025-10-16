@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manajemen Tugas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 Manajemen Tugas Kuliah</h1>
+    <p>Kelola dan pantau semua tugasmu dengan gaya yang cute tapi rapi 💌</p>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" class="tab-link active" data-tab="home">Beranda</a></li>
+      <li><a href="#" class="tab-link" data-tab="tasks">Kelola Tugas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="home" class="tab-content active">
+    <div class="welcome">
+      <h2>Hai teman, ini daftar tugas kita </h2>
+      <p>Semangat yaa semuanyaa go go 💪</p>
+    </div>
+
+    <div class="deadline-section">
+      <h3>Urutan Deadline ⏰</h3>
+      <div id="deadlineList"></div>
+    </div>
+  </section>
+
+  <!-- Kelola Tugas -->
+  <section id="tasks" class="tab-content">
+    <h2>📝 Daftar Tugas</h2>
+    <div class="task-input">
+      <input type="text" id="taskName" placeholder="Nama tugas..." />
+      <input type="datetime-local" id="taskDeadline" />
+      <button id="addTask">Tambah</button>
+    </div>
+
+    <h3>Semua Tugas</h3>
+    <div id="taskList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
